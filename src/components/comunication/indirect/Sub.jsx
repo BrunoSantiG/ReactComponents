@@ -5,10 +5,18 @@ export default (props) => {
 		<div>
 			<button
 				onClick={() => {
-					props.OnClick(Math.random());
+					props.Increment();
 				}}
 			>
-				Update
+				Increment
+			</button>
+
+			<button
+				onClick={() => {
+					props.Decrement();
+				}}
+			>
+				Decrement
 			</button>
 		</div>
 	);
