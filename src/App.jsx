@@ -9,7 +9,8 @@ import IfCondicionalComponent from "./components/basics/IfCondicionalComponent";
 import DirectComunication from "./components/comunication/direct/Father";
 import IndirectComunication from "./components/comunication/indirect/Super";
 import InputComponent from "./components/forms/InputComponent";
-import ClassCounter from "./components/counter/Counter";
+import ClassCounter from "./components/counters/Counter";
+import Lottery from "./components/lottery/Lottery";
 import Card from "./components/layouts/Card";
 
 import "./App.css";
@@ -79,6 +80,10 @@ export default () => {
 
 				<Card number="#10" title="Counter Using Class" color="#293E64">
 					<ClassCounter />
+				</Card>
+
+				<Card number="#11" title="Lottery" color="#57102C">
+					<Lottery numberQtt={6} />
 				</Card>
 			</div>
 		</div>
