@@ -6,6 +6,8 @@ import ChildrenComponent from "./components/basics/ChildrenComponent";
 import RepeatComponent from "./components/basics/RepeatComponent";
 import CondicionalComponent from "./components/basics/CondicionaComponent";
 import IfCondicionalComponent from "./components/basics/IfCondicionalComponent";
+import DirectComunication from "./components/comunication/direct/Father";
+import IndirectComunication from "./components/comunication/indirect/Super";
 import Card from "./components/layouts/Card";
 
 import "./App.css";
@@ -39,12 +41,20 @@ export default () => {
 				<RepeatComponent />
 			</Card>
 
-			<Card number="#05" title="Condicional Component-v1" color="#FF85CB">
+			<Card number="#05" title="Condicional Component-v1" color="#20457C">
 				<CondicionalComponent number={10} />
 			</Card>
 
 			<Card number="#06" title="Condicional Component-v2" color="#4298B5">
 				<IfCondicionalComponent number={11} />
+			</Card>
+
+			<Card number="#07" title="Direct Comunication" color="#982395">
+				<DirectComunication lastname="Freitas" />
+			</Card>
+
+			<Card number="#08" title="Indirect Comunication" color="#59323C">
+				<IndirectComunication />
 			</Card>
 		</div>
 	);
